@@ -30,13 +30,9 @@ PRODUCT_MANUFACTURER := samsung
 # Use the latest approved GMS identifiers
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="m51nsxx-user 12 SP1A.210812.016 M515FXXS5DWG1 release-keys" \
-    PRODUCT_DEVICE=m51 \
-    PRODUCT_NAME=m51nsxx \
-    TARGET_BOOTLOADER_BOARD_NAME=sm6150 \
-
-BUILD_FINGERPRINT := "samsung/m51nsxx/qssi:12/SP1A.210812.016/M515FXXS5DWG1:user/release-keys"
+# Vendor fingerprint
+BUILD_FINGERPRINT := "samsung/m51nsxx/m51:11/RP1A.200720.012/M515FXXS5DXA1:user/release-keys"
+PRIVATE_BUILD_DESC := "m51nsxx-user 12 SP1A.210812.016 M515FXXS5DXA1 release-keys"
 
 # Matrixx Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
