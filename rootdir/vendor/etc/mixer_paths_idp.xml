@@ -2329,7 +2329,7 @@
 
     <path name="handset">
         <path name="rcv" />
-        <ctl name="RX_RX0 Digital Volume" value="79" />
+        <ctl name="RX_RX0 Digital Volume" value="80" />
         <ctl name="EAR PA Gain" value="G_6_DB" />
     </path>
 
@@ -2372,8 +2372,8 @@
 
     <path name="speaker-and-headphones">
         <path name="spk-ear" />
-        <ctl name="RX_RX0 HPH Digital Volume" value="50" />
-        <ctl name="RX_RX1 HPH Digital Volume" value="50" />
+        <ctl name="RX_RX0 HPH Digital Volume" value="56" />
+        <ctl name="RX_RX1 HPH Digital Volume" value="56" />
     </path>
 
     <path name="speaker-and-bt-sco">
@@ -2421,8 +2421,8 @@
 
     <path name="fm-headset">
         <path name="ear" />
-        <ctl name="RX_RX0 HPH Digital Volume" value="68" />
-        <ctl name="RX_RX1 HPH Digital Volume" value="68" />
+        <ctl name="RX_RX0 HPH Digital Volume" value="67" />
+        <ctl name="RX_RX1 HPH Digital Volume" value="67" />
     </path>
 
     <path name="fm-input">
@@ -2432,20 +2432,20 @@
     <!-- Recording Scenario  -->
     <path name="rec-main-mic">
         <path name="main-mic" />
-        <ctl name="TX_DEC0 Volume" value="98" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="ADC1 Volume" value="6" />
     </path>
 
     <path name="rec-sub-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="98" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="rec-headset-mic">
         <path name="ear-mic" />
-        <ctl name="TX_DEC0 Volume" value="102" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="86" />
+        <ctl name="ADC2 Volume" value="3" />
     </path>
 
     <path name="rec-headset-main-mic">
@@ -2458,10 +2458,10 @@
 
     <path name="rec-stereo-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="98" />
-        <ctl name="TX_DEC1 Volume" value="98" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC1 Volume" value="84" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="rec-usb-headset-mic">
@@ -2480,42 +2480,42 @@
 
     <path name="camcorder-main-mic">
         <path name="main-mic" />
-        <ctl name="TX_DEC0 Volume" value="92" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="ADC1 Volume" value="6" />
     </path>
 
     <path name="camcorder-sub-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="92" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="camcorder-stereo-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="92" />
-        <ctl name="TX_DEC1 Volume" value="92" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC1 Volume" value="84" />
+        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="6" />
     </path>
 
     <path name="echo-main-mic">
         <path name="main-mic" />
-        <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="ADC1 Volume" value="2" />
     </path>
 
     <path name="echo-sub-mic">
         <path name="sub-mic" />
-        <ctl name="TX_DEC0 Volume" value="84" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="94" />
+        <ctl name="ADC2 Volume" value="2" />
     </path>
 
     <path name="echo-stereo-mic">
         <path name="sub-main-mic" />
-        <ctl name="TX_DEC0 Volume" value="114" />
-        <ctl name="TX_DEC1 Volume" value="84" />
-        <ctl name="ADC1 Volume" value="0" />
-        <ctl name="ADC2 Volume" value="0" />
+        <ctl name="TX_DEC0 Volume" value="111" />
+        <ctl name="TX_DEC1 Volume" value="94" />
+        <ctl name="ADC1 Volume" value="2" />
+        <ctl name="ADC2 Volume" value="2" />
     </path>
 
     <path name="usb-headset-mic">
@@ -2523,7 +2523,7 @@
 
     <path name="unprocessed-main-mic">
         <path name="main-mic" />
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="94" />
         <ctl name="ADC1 Volume" value="0" />
     </path>
 
@@ -2558,14 +2558,14 @@
 
     <path name="vr-headset-mic">
         <path name="ear-mic" />
-        <ctl name="TX_DEC0 Volume" value="98" />
+        <ctl name="TX_DEC0 Volume" value="95" />
         <ctl name="ADC2 Volume" value="10" />
     </path>
 
     <path name="vr-dual-mic">
         <path name="main-sub-mic" />
         <ctl name="TX_DEC0 Volume" value="93" />
-        <ctl name="TX_DEC1 Volume" value="95" />
+        <ctl name="TX_DEC1 Volume" value="93" />
         <ctl name="ADC1 Volume" value="10" />
         <ctl name="ADC2 Volume" value="10" />
     </path>
