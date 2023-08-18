@@ -167,7 +167,6 @@ vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sm6150.so
 vendor/lib/hw/audio.r_submix.default.so
 vendor/lib/hw/audio.usb.default.so
-vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/lib_SamsungRec_07002.so
 vendor/lib/lib_soundaliveresampler.so
 vendor/lib/libacdb-fts.so
@@ -187,7 +186,6 @@ vendor/lib/libsamsungVoipResampler.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
-vendor/lib/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/hw/audio.primary.default.so
 vendor/lib64/hw/audio.r_submix.default.so
 vendor/lib64/hw/audio.usb.default.so
@@ -201,7 +199,6 @@ vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libsecaudioinfo.so
-vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 
 # Audio (FX modules)
 vendor/lib/soundfx/libasphere.so
