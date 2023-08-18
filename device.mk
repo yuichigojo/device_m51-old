@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl.sm6150 \
+    android.hardware.audio@6.0-impl.m51 \
     android.hardware.audio.effect@6.0-impl \
     android.hardware.audio.common-util.vendor \
     android.hardware.audio.service \
@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
     android.frameworks.cameraservice.device@2.0.vendor \
     android.frameworks.cameraservice.service@2.1.vendor \
     android.hardware.camera.provider@2.5-impl \
-    android.hardware.camera.provider@2.6-service.sm6150 \
+    android.hardware.camera.provider@2.6-service.m51 \
     android.hardware.camera.provider@2.7.vendor \
     android.hardware.camera.device@3.7.vendor \
     libcamera2ndk_vendor \
@@ -301,7 +301,7 @@ PRODUCT_PACKAGES += \
 
 # LiveDisplay
 PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom.sm6150
+    vendor.lineage.livedisplay@2.0-service.samsung-qcom.m51
 
 # Media
 PRODUCT_PACKAGES += \
@@ -433,7 +433,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti.sm6150 \
+    android.hardware.power-service-qti.m51 \
     android.hardware.power.stats@1.0-service.mock \
     android.hardware.power@1.3.vendor
 
@@ -586,7 +586,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.sm6150
+    android.hardware.vibrator-service.m51
 
 # WiFi
 PRODUCT_PACKAGES += \
