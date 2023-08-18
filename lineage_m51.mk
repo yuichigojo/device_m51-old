@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
-
 # Inherit from m51 device
 $(call inherit-product, device/samsung/m51/device.mk)
 
@@ -34,7 +31,7 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=qssi \
+    TARGET_DEVICE=m51 \
     PRODUCT_NAME=m51nsxx \
     PRIVATE_BUILD_DESC="m51nsxx-user 12 SP1A.210812.016 M515FXXS4DVF2 release-keys"
 
