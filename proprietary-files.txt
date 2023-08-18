@@ -163,8 +163,10 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 
 # Audio
 vendor/bin/audioflacapp
+vendor/lib/hw/audio.primary.default.so
 vendor/lib/hw/audio.primary.sm6150.so
-vendor/lib/hw/audio.sec_primary.default.so
+vendor/lib/hw/audio.r_submix.default.so
+vendor/lib/hw/audio.usb.default.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib/lib_SamsungRec_07002.so
 vendor/lib/lib_soundaliveresampler.so
@@ -186,8 +188,9 @@ vendor/lib/libsecaudioinfo.so
 vendor/lib/libsurround_3mic_proc.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
-vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
+vendor/lib64/hw/audio.primary.default.so
+vendor/lib64/hw/audio.r_submix.default.so
+vendor/lib64/hw/audio.usb.default.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -479,6 +482,11 @@ vendor/lib64/libhdcp1prov.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/liboemcrypto.so
+
+# Display configs
+vendor/etc/qdcm_calib_data_ss_dsi_panel_S6E3FA9_AMB667UM07_FHD.xml
+vendor/etc/qdcm_calib_data_ss_dsi_panel_SW83106_FHD.xml
+vendor/etc/qdcm_calib_data_ss_dsi_panel_SW83106_WM6676Z21_FHD.xml
 
 # DSP
 vendor/bin/cdsprpcd
