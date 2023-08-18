@@ -173,9 +173,6 @@ debug.stagefright.omx_default_rank=0
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.config.vc_call_vol_steps=8
 
-# NFC
-ro.hardware.nfc_nci=nqx.default
-
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
