@@ -17,11 +17,11 @@
 # Inherit from m51 device
 $(call inherit-product, device/samsung/m51/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_m51
+PRODUCT_NAME := aosp_m51
 PRODUCT_DEVICE := m51
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M515F
@@ -31,11 +31,11 @@ PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=m51 \
-    PRODUCT_NAME=m51nsxx \
     PRIVATE_BUILD_DESC="m51nsxx-user 12 SP1A.210812.016 M515FXXS4DVF2 release-keys"
 
 BUILD_FINGERPRINT := samsung/m51nsxx/qssi:12/SP1A.210812.016/M515FXXS4DVF2:user/release-keys
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP  := true
