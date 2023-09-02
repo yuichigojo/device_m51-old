@@ -199,6 +199,10 @@ vendor/lib64/libaudioconfigstore.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
 vendor/lib64/libsecaudioinfo.so
+vendor/lib/vendor.samsung.hardware.audio@1.0.so
+vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
+vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
+vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 
 # Audio (FX modules)
 vendor/lib/soundfx/libasphere.so
