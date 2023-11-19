@@ -41,6 +41,6 @@ void property_override_dual(char const system_prop[], char const vendor_prop[], 
 }
 
 void vendor_load_properties() {
-    std::string boot_model_version = android::base::GetProperty("ro.boot.product.model", "SM-M515F");
+    std::string boot_model_version = android::base::GetProperty("ro.boot.product.model", "SM-M515");
     property_override_dual("ro.product.model", "ro.product.vendor.model", boot_model_version.c_str());
 }
