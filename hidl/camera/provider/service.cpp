@@ -14,7 +14,7 @@
 ** limitations under the License.
 */
 
-#define LOG_TAG "android.hardware.camera.provider@2.6-service.m51"
+#define LOG_TAG "android.hardware.camera.provider@2.6-service.samsung"
 
 #include <android/hardware/camera/provider/2.6/ICameraProvider.h>
 #include <binder/ProcessState.h>

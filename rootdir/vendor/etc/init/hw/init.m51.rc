@@ -32,13 +32,21 @@ on boot
 # SSWAP
     write /proc/sys/vm/swappiness 160
 
-on post-fs
+# Performance
+    chown radio system /sys/power/cpufreq_min_limit
+    chmod 0664 /sys/power/cpufreq_min_limit
+    chown radio system /sys/power/cpufreq_max_limit
+    chmod 0664 /sys/power/cpufreq_max_limit
+    chown root system /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+    chmod 0664 /sys/class/kgsl/kgsl-3d0/gpu_available_frequencies
+    chown system radio /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/available_frequencies
+    chmod 0664 /sys/class/devfreq/soc:qcom,cpu6-cpu-ddr-latfloor/available_frequencies
+    chown root root /sys/class/input_booster/touch/level
+    chmod 0644 /sys/class/input_booster/touch/level
+    chown root system /dev/cpuset/restricted/cpus
+    chmod 0664 /dev/cpuset/restricted/cpus
 
-# faced
-service faced /system/bin/faced
-    class late_start
-    user system
-    group system
+on post-fs
 
 on post-fs-data
 # setup cgroup freezer for freecess
@@ -111,12 +119,12 @@ on post-fs-data
     chown system audio /sys/class/audio/amp/excursion_max_0
     chown system audio /sys/class/audio/amp/excursion_overcount_0
 
-# Samsung Pay
-#    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+Samsung Pay
+    mkdir /efs/pfw_data 0760 system system
 
-# MST/NFC Switch
-#    chown vendor_spay system /dev/mst_ctrl
-#    chmod 0660 /dev/mst_ctrl    
+MST/NFC Switch
+    chown system system /dev/mst_ctrl
+    chmod 0660 /dev/mst_ctrl    
 
 # Fingerprint sensor
     chmod 0660 /dev/esfp0
@@ -137,15 +145,6 @@ on post-fs-data
     mkdir /data/vendor/fpSnrTest 0770 system system
     mkdir /efs/biometrics 0770 system system
     mkdir /efs/biometrics/meta 0770 system system
-
-# SSWAP
-service swapon /system/bin/sswap -s -z -f 2048
-    class core
-    user system
-    group system
-    capabilities SYS_ADMIN
-    seclabel u:r:sswap:s0
-    oneshot
 
 # tracking activation VNG
 #on property:ro.csc.sales_code=XXV
