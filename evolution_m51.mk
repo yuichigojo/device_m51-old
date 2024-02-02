@@ -17,8 +17,8 @@
 # Inherit from m51 device
 $(call inherit-product, device/samsung/m51/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Evolution stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_m51
@@ -38,11 +38,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := "samsung/m51nsxx/qssi:12/SP1A.210812.016/M515FXXS5DWG1:user/release-keys"
 
-# Matrixx Stuff
+# Evolution Stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-MATRIXX_CHIPSET := SM7150
-MATRIXX_BATTERY := 7000mAh
-MATRIXX_DISPLAY := 1080x2400
-MATRIXX_MAINTAINER := OKADA
+TARGET_USES_PICO_GAPPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_ENABLE_BLUR := true
 

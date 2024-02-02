@@ -52,6 +52,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
 
+PRODUCT_PACKAGES += \
+    SettingsOverlayMarble
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     init.m51.rc \
